@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 const getMemories = async () => {
     // Because this is server components, we have to define the URL with http
     const res = await fetch('/api/memories')
+    console.log(res);
     if (!res.ok) {
         return {
         }
